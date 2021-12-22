@@ -1,0 +1,22 @@
+{
+    "blogs": [
+      {
+        "title": "My first Appliaction",
+        "body": "This is my first Application and I'm very proud of it!",
+        "author": "Jackson",
+        "id": "1"
+      },
+      {
+        "title": "My first day at school",
+        "body": "It wasn't cool",
+        "author": "Mario",
+        "id": "2"
+      },
+      {
+        "title": "My first day at work!",
+        "body": "It was so amazing and incredible",
+        "author": "Jackson",
+        "id": "3"
+      }
+    ]
+  }

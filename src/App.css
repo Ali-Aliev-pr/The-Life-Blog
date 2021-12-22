@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+
+.navbar {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+
+.navbar .links {
+  display: flex;
+}
+
+.links .link {
+  text-decoration: none;
+  color: #000;
+}
+
+.links .link:not(:last-child) {
+  padding-right: 7px;
+}
+
+.navbar h1 {
+  color: coral;
+}
+
+.links .link:hover {
+  color: coral;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* home */
+
+.home {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.home .blogs {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.home .blogs:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  transition: 0.5s;
+}
+
+.blogs h2 {
+  color: coral;
+  padding-bottom: 5px;
+}
+
+.blogs h2, p {
+  padding-left: 5px;
+}
+
+/* create */
+
+
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+}
+
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  outline: none;
+}
+
+.create button {
+  background-color: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create button:hover {
+  background-color: white;
+  color: #f1356d;
+  border: 1px solid #000;
+  transition: 0.5s;
+}
