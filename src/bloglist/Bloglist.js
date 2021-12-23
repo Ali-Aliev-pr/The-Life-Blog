@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Bloglist = ({blogs, del}) => {
+const Bloglist = ({blogs}) => {
     return ( 
         <div className="bloglist">
             {blogs.map(e => {
@@ -8,7 +9,7 @@ const Bloglist = ({blogs, del}) => {
                     <div className="blogs" key={e.id}>
                         <h2>{e.title}</h2>
                         <p>{e.body}</p>
-                        <button onClick={() => del(e.id)}>Delete Blog</button>
+                        <Link to={`/blogs/${e.id}`}>Read more!</Link>
                     </div>
                 )
             })}
