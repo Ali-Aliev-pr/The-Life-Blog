@@ -17,10 +17,26 @@ const Blodetails = () => {
     //     })
     // })
 
+    const handledelete = (e) => {
+        fetch('http://localhost:3000/blogs/'+id, {
+            method: 'DELETE'
+        })
+        .then(() => {
+            console.log('Blog Deleted!')
+        })
+    }
+
     return ( 
         <>
             <div className="blogdetails">
                 {isPending && <div>Loading Data...</div>}
+                {blog && 
+                <div className="blogdetail">
+                    <h2>{blog.title}</h2>
+                    <p>{blog.body}</p>
+                    <p>Written by, {blog.author}</p>
+                    <button onClick={handledelete}>Delete Blog!</button>
+                </div>}
             </div>
         </>
      );
