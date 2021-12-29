@@ -8,7 +8,6 @@ const Bloglist = ({blogs}) => {
                 return (
                     <div className="blogs" key={e.id}>
                         <h2>{e.title}</h2>
-                        {/* <p>{e.body}</p> */}
                         <Link to={`/blogs/${e.id}`}>Read more!</Link>
                     </div>
                 )

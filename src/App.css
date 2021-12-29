@@ -138,3 +138,65 @@
   padding-left: 5px;
   padding-top: 2px;
 }
+
+/* searchBlock */
+
+.searchBlock {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.searchBlock h2 {
+  color: coral;
+}
+
+.searchBlock input {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    outline: none;
+}
+
+.searchBlock button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  color: black;
+  background-color: coral;
+  cursor: pointer;
+}
+
+.searchBlock button:hover {
+  color: coral;
+  background-color: white;
+  border: 1px solid #000;
+  transition: 00.5s;
+}
+
+
+.bloglistsearch {
+  text-align: left;
+}
+
+.bloglistsearch {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.bloglistsearch:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  transition: 0.5s;
+}
+
+.bloglistsearch h2 {
+  color: coral;
+  padding-bottom: 5px;
+}
+
+.blogs h2, p {
+  padding-left: 5px;
+}

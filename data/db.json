@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "title": "My first day at school",
-      "body": "It wasn't cool",
-      "author": "Mario",
-      "id": "2"
-    },
-    {
       "title": "My first day at work!",
       "body": "It was so amazing and incredible",
       "author": "Jackson",

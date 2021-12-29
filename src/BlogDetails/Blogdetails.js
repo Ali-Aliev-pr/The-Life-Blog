@@ -2,11 +2,14 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react/cjs/react.development";
 import useFetch from "../customHooks/useFetch";
+import { useHistory } from "react-router-dom";
 
 const Blodetails = () => {
     const {id} = useParams();
 
     const { data: blog, error, isPending} = useFetch('http://localhost:3000/blogs/'+id)
+
+    let history = useHistory();
 
     // useEffect(() => {
     //     fetch('http://localhost:3000/blogs/'+id)
@@ -23,6 +26,7 @@ const Blodetails = () => {
         })
         .then(() => {
             console.log('Blog Deleted!')
+            history.push('/')
         })
     }
 
